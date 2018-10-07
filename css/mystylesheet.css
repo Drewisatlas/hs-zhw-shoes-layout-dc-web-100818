@@ -1,0 +1,201 @@
+/* font-family ///////////////////////////////////////////////////////////////*/
+
+@import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /*"Elsie Swash Caps"*/
+
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+
+/*Global styles //////////////////////////////////////////////////////////////*/
+
+img, video, audio, iframe, table, form { /* scale elements to accomodate responsive layout. */
+  width:100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
+
+
+#wood {
+  background-image: url(../images/wood.jpg), url(../images/wood_slice.jpg);
+  background-position: center top, left top;
+  background-repeat: no-repeat, repeat-y;
+}
+
+.wrapper {
+  width: 960px;
+  margin: auto;
+}
+
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
+
+
+body {
+  background: url(../images/handmadepaper.png);
+}
+
+/* Social Media //////////////////////////////////////////////////////////////*/
+
+#social {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  column-span: 3;
+}
+
+a.fbook, a.twitt, a.gplus {
+  display: block;
+  background: url(../images/social-icons.png);
+  color: transparent;
+  width: 40px;
+  height:40px;
+  overflow: hidden;
+}
+
+a.fbook{
+  background-position: 0 0;
+}
+
+a.twitt{
+  background-position: 0 -40px;
+}
+
+a.gplus{
+  background-position: 0 -80px;
+}
+
+/* Navigation Bar ////////////////////////////////////////////////////////////*/
+
+#nav_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/header-fade.gif);
+}
+
+nav a {
+  display: inline-block;
+  width: 20%;
+  padding: 20px 0; /*specified a padding of 0 on the sides otherwsie 20 px would be added */
+  border: 1px solid #ccc;
+  box-sizing: border-box; /*when I added the border it pushed one of the elements down. added border box to border is now included in sizing */
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+nav a:active {
+  background-color: black ;
+  color: white;
+}
+
+/* logo line /////////////////////////////////////////////////////////////////*/
+
+#logo{
+  margin-top: 85px;
+  margin-bottom: 25px;
+}
+
+#logo h1 {
+  display: inline-block;
+  background: url(../images/logo_crown_emboss.png) no-repeat;
+  background-position: 24px top;
+  font-family: "Clicker Script", cursive;
+  padding-top: 20px;
+  margin: 0;
+}
+
+#logo h2 {
+  display: inline-block;
+  font-family: "Elsie Swash Caps", cursive;
+  margin: 0;
+}
+/* Sections /////////////////////////////////////////////////////////////*/
+
+section {
+  background: white;
+  padding: 20px;
+}
+
+section#holiday_sale {
+
+}
+
+div#line_1 section {
+}
+
+div#line_1 section#summer_grass{
+  float: left;
+  width: 66%;
+}
+
+div#line_1 section#shoe_archive {
+  float: right;
+  width: 32.2%;
+}
+
+div#line_1 section#shoe_archive {
+  float: right;
+  width: 32.2%;
+}
+
+div#line_2 {
+  clear: both;
+}
+
+section a {
+  color:black;
+}
+
+#details {
+  columns: 3;
+  padding: 20px 10px;
+  background: rgb(229,229,229);
+  background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%);
+}
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover, #details a:active {
+  text-decoration: underline;
+}
+
+.milk_text {
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+
+}
+
+h2, h3 {
+  margin-bottom: 5px;
+}
+
+ul, ol {
+  margin-bottom: 10px;
+}
+
+figure {
+  margin-top: 0 0 10px;
+}
+
+/* //////////////////////////////////////*/
+.border_right {
+  display: inline;
+  border-right: 1px dotted #ccc;
+  padding-right: 20px;
+
+}
